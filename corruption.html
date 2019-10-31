@@ -1,0 +1,50 @@
+<head>
+  <title>Experiment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="corruption.css" />
+</head>
+
+<body>
+  <div id="instructions">
+    <p>PART 1: How Corruptible Does the Politician Look?
+    </p>
+    <p>For this experiment, you will view photos of politicians and rate how corruptible each of them looks. This part is split into multiple blocks. You will be given the option to take breaks between blocks. This part will take approximately 26 minutes so you are encouraged to take some breaks between blocks.
+    </p>
+    </p>For each politician, you will see three screens as follow. There will be more detailed instructions about the axis labels once the experiment starts. When you see the fixation cross screen, please fixate your eyes at the cross. Then the photo will be up for a short time. You can make a choice as soon as the photo appears; you can still make a choice a short time after the photo disappears. Click the empty bubbles on the scale to indicate where you think the politician should be on the scale As soon as you rate this photo, you will move to the next photo and continue rating. Several practice photos will be given to familiarize you with the task once you start the experiment.
+    </p>
+    <p>Please make your judgment as quickly and precisely as possible. You are encouraged to use the full range to rate the politicians.
+    </p>
+    <div id="startExperimentButton" >
+      <a href="#" id="startExperiment" onclick="nextTrial();">Start Experiment</a>
+    </div>
+  </div>
+
+  <div id="fixation" class="fixation">
+    +
+  </div>
+
+  <div id="trial" class="trialDiv">
+    <p><img width="100" id="trialImage"></p>
+    <ul class="likert">
+      <li> Dishonest </li>
+      <li><input type="radio" name="honest" value="1" /></li>
+      <li><input type="radio" name="honest" value="2" /></li>
+      <li><input type="radio" name="honest" value="3" /></li>
+      <li><input type="radio" name="honest" value="4" /></li>
+      <li><input type="radio" name="honest" value="5" /></li>
+      <li> Honest </li>
+    </ul>
+    <!-- <input type="hidden" name="questionRT" value="0" id="reactionTime"> -->
+    <br>
+
+    <button type="button" onclick="this.blur(); nextTrial()">Next</button>
+
+  </div>
+
+  <!-- do not put this on Turk -->
+  <input type="submit" id="submitButton">
+
+  <script src="corruption.js"></script>
+
+</body>

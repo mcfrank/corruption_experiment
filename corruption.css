@@ -1,0 +1,79 @@
+.trialDiv {
+  border: 2px solid teal;
+  padding: 40px;
+  width: 1000px;
+  margin: 0 auto;
+  display: none;
+}
+
+.fixation {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 60pt;
+
+}
+
+.breakDiv {
+ border: 2px solid teal;
+  padding: 40px;
+  width: 1000px;
+  margin: 0 auto;
+  display: none;
+}
+
+.likert li {
+  float: left;
+  list-style-type: none;
+}
+
+.w3-button w3-green {
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica;
+  font-size: 14pt;
+}
+
+#submitButton {
+  display: none;
+}
+
+#instructions {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#startExperiment {
+  color: rgb(200,200,200);
+  text-decoration: none;
+}
+
+#startExperiment:hover {
+  color: white;
+}
+
+#startExperimentButton {
+  width: 200px;
+  text-align: center;
+  border: 4px outset green;
+  background: green;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#returnToExperiment {
+  color:rgb(200,200,200);
+  text-decoration: none;
+}
+
+#returnToExperiment:hover {
+  color: white;
+}
